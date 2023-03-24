@@ -21,4 +21,4 @@ A portfolio that utilizes react.
   React
 
   ## Github repository link
-  
+  https://github.com/DavidParker42/PORTFOLIO
