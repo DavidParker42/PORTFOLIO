@@ -7,7 +7,7 @@ function Header(props) {
             <h1>Parker</h1>
             <img src="./images/headshot.png" class="headshot" alt="" />
           </div>
-          <Navbar props={props} />
+          <Navbar prop={props} />
         </header>
         <section class="under-header">
           <img

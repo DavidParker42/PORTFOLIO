@@ -1,17 +1,19 @@
 
 
 function Navbar(props) 
-{ 
+{ const {prop} = props
   const {
     pages, currentpage, setCurrentPage
-  } = props;
+  } = prop;
   return (
   <nav>
     <ul class="nav-links">
       {pages.map(Page => {
-        <li onClick={()=> setCurrentPage(Page)}>
+        return(
+          <li onClick={()=> setCurrentPage(Page)}>
           {Page.name}
         </li>
+        )
       })}
     </ul>
   </nav>
