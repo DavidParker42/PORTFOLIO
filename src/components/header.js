@@ -2,28 +2,12 @@ import Navbar from "./navbar"
 function Header(props) {
     return (
       <div>
-        <Navbar />
         <header>
           <div class="logo-container">
             <h1>Parker</h1>
             <img src="./images/headshot.png" class="headshot" alt="" />
           </div>
-          <nav>
-            <ul class="nav-links">
-              <li>
-                <a href="#about-me">About Me</a>
-              </li>
-              <li>
-                <a href="#work-pics">Work</a>
-              </li>
-              <li>
-                <a href="#contact">Contact Me</a>
-              </li>
-              <li>
-                <a href="./Resume.docx"download>Resume</a>
-              </li>
-            </ul>
-          </nav>
+          <Navbar props={props} />
         </header>
         <section class="under-header">
           <img
