@@ -1,5 +1,9 @@
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 function Aboutme(props) {
   return (
+    <>
+    <Navbar/>
     <div class="aboutMe">
       <section id="about-me">
         <aside>
@@ -16,6 +20,9 @@ function Aboutme(props) {
         </p>
       </section>
     </div>
+    <Footer/>
+    </>
+    
   );
 }
 
