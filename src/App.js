@@ -10,17 +10,34 @@ import { useState } from 'react';
 
 
 function App() {
-  const pages = [{ name: "About Me" }, { name: "Contact" }, { name: "Work" }];
-   const [currentpage, setCurrentPage] = useState (pages[0])
+  const [currentPage, setCurrentPage] = useState("home");
+
+  const changePage = (newPage) => {
+    setCurrentPage(newPage);
+  };
+
   return (
     <div>
-      <Header pages={pages} currentpage={currentpage} setCurrentPage={setCurrentPage}/>
-      {/* <Aboutme />
-      <Contact />
-      <Work /> */}
-      <Footer />
+      <Navbar changePage={changePage} />
+      {currentPage === "home" && <Home />}
+      {currentPage === "about" && <About />}
+      {currentPage === "contact" && <Contact />}
     </div>
   );
 }
+
+// function App() {
+//   const pages = [{ name: "About Me" }, { name: "Contact" }, { name: "Work" }];
+//    const [currentpage, setCurrentPage] = useState (pages[0])
+//   return (
+//     <div>
+//       <Header pages={pages} currentpage={currentpage} setCurrentPage={setCurrentPage}/>
+//       {/* <Aboutme />
+//       <Contact />
+//       <Work /> */}
+//       <Footer />
+//     </div>
+//   );
+// }
 
 export default App;
