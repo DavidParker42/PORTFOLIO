@@ -11,17 +11,22 @@ function Navbar(props) {
     <nav>
       <ul>
         <li>
-          <NavLink id="home" to='/'>
+          <NavLink id="home" to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink id="about" to='/about'>
+          <NavLink id="about" to="/about">
             About
           </NavLink>
         </li>
         <li>
-          <NavLink id="contact" to='/contact'>
+          <NavLink id="work" to="/work">
+            Work
+          </NavLink>
+        </li>
+        <li>
+          <NavLink id="contact" to="/contact">
             Contact
           </NavLink>
         </li>
