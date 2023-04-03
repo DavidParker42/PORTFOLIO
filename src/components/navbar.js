@@ -11,17 +11,17 @@ function Navbar(props) {
     <nav>
       <ul>
         <li>
-          <NavLink id="home" onClick={handleClick}>
+          <NavLink id="home" to='/'>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink id="about" onClick={handleClick}>
+          <NavLink id="about" to='/about'>
             About
           </NavLink>
         </li>
         <li>
-          <NavLink id="contact" onClick={handleClick}>
+          <NavLink id="contact" to='/contact'>
             Contact
           </NavLink>
         </li>
