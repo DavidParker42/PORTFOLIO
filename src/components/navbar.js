@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
   const handleClick = (e) => {
@@ -10,19 +11,19 @@ function Navbar(props) {
     <nav>
       <ul>
         <li>
-          <a id="home" onClick={handleClick}>
+          <NavLink id="home" onClick={handleClick}>
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a id="about" onClick={handleClick}>
+          <NavLink id="about" onClick={handleClick}>
             About
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a id="contact" onClick={handleClick}>
+          <NavLink id="contact" onClick={handleClick}>
             Contact
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
