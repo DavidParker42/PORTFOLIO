@@ -11,24 +11,50 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 
 
-function App() {
-  // const [currentPage, setCurrentPage] = useState("home");
+export default function PortfolioContainer() {
+  const [currentPage, setCurrentPage] = useState('Home');
 
-  // const changePage = (newPage) => {
-  //   setCurrentPage(newPage);
-  // };
+  // TODO: Add a comment describing the functionality of this method
+  // this method is checking to see what the value of 1currentPage` is. Depending on the value of currentPage, we return the corresponding component to render
+  const renderPage = () => {
+    if (currentPage === 'Home') {
+      return <Home />;
+    }
+    if (currentPage === 'AboutMe') {
+      return <AboutMe />;
+    }
+    if (currentPage === 'Work') {
+      return <Work />;
+    }
+    return <Contact />;
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <Routes>
-      <Route path="/" element={<Header />} />
-      <Route path="/about" element={<Aboutme />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/work" element={<Work  />} />
-      {/* <Route path='/resume' element={<Resume />}/> */}
-      <Route path="/PORTFOLIO" element={<Navigate replace to="/" />} />
-    </Routes>
+    <div>
+      {/* we are passing the currentPage from state and the function to update it */}
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* here wer are calling the renderPage method which will return a component */}
+      {renderPage()}
+    </div>
   );
 }
+
+
+// function App() {
+
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Header />} />
+//       <Route path="/about" element={<Aboutme />} />
+//       <Route path="/contact" element={<Contact />} />
+//       <Route path="/work" element={<Work  />} />
+//       {/* <Route path='/resume' element={<Resume />}/> */}
+//       <Route path="/PORTFOLIO" element={<Navigate replace to="/" />} />
+//     </Routes>
+//   );
+// }
 
 // function App() {
 //   const pages = [{ name: "About Me" }, { name: "Contact" }, { name: "Work" }];
