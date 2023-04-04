@@ -19,11 +19,11 @@ export default function PortfolioContainer() {
   // TODO: Add a comment describing the functionality of this method
   // this method is checking to see what the value of 1currentPage` is. Depending on the value of currentPage, we return the corresponding component to render
   const renderPage = () => {
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
     if (currentPage === 'AboutMe') {
       return <AboutMe />;
+    }
+    if (currentPage === "Contact") {
+      return <Contact />;
     }
     if (currentPage === 'Work') {
       return <Work />;
