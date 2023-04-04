@@ -14,10 +14,9 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('AboutMe');
 
-  // TODO: Add a comment describing the functionality of this method
-  // this method is checking to see what the value of 1currentPage` is. Depending on the value of currentPage, we return the corresponding component to render
+  // checking to see what the value of 1currentPage` is. Depending on the value of currentPage, we return the corresponding component to render
   const renderPage = () => {
     if (currentPage === 'AboutMe') {
       return <aboutMe />;
@@ -35,9 +34,9 @@ export default function PortfolioContainer() {
 
   return (
     <div>
-      {/* we are passing the currentPage from state and the function to update it */}
+      {/* passing the currentPage from state and the function to update it */}
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* here wer are calling the renderPage method which will return a component */}
+      {/* calling the renderPage method which will return a component */}
       {renderPage()}
     </div>
   );
