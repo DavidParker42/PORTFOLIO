@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Navbar(props) {
   const handleClick = (e) => {
     const newPage = e.target.id;
-    props.changePage(newPage);
+    props.handlePageChange(newPage);
   };
 
   return (
