@@ -10,27 +10,35 @@ function Navbar(props) {
   return (
     <nav>
       <ul>
-        <li>
-          <NavLink id="home" to="/">
+        {/* <li>
+          <NavLink id="home" to="/" onClick={() => handlePageChange("Home")}>
             Home
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             id="about"
             to="/aboutMe"
-            onClick={() => handleClick("About")}
+            onClick={() => handlePageChange("About")}
           >
             About
           </NavLink>
         </li>
         <li>
-          <NavLink id="work" to="/work">
+          <NavLink
+            id="work"
+            to="/work"
+            onClick={() => handlePageChange("Work")}
+          >
             Work
           </NavLink>
         </li>
         <li>
-          <NavLink id="contact" to="/contact">
+          <NavLink
+            id="contact"
+            to="/contact"
+            onClick={() => handlePageChange("contact")}
+          >
             Contact
           </NavLink>
         </li>
