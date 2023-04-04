@@ -15,7 +15,7 @@ function Header(props) {
             class="lines"
             alt=""
           />
-          <div class="bottom-left">David Parker's Portfolio</div>
+          <div className="bottom-left">David Parker's Portfolio</div>
         </section>
       </div>
     );

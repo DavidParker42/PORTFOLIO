@@ -1,7 +1,7 @@
 function Work(props) {
   return (
   <div>
-<section class="work-title">
+<section className="work-title">
       <aside>
         <h3>Work</h3>
       </aside>

@@ -1,7 +1,7 @@
 function Contact(props) {
   return (
     <div>
-      <section class="contactParagraph" id="contact">
+      <section className="contactParagraph" id="contact">
         <aside>
           <h3>Contact Info</h3>
         </aside>

@@ -4,7 +4,7 @@ function Aboutme(props) {
   return (
     <>
     <Navbar/>
-    <div class="aboutMe">
+    <div className="aboutMe">
       <section id="about-me">
         <aside>
           <h3>About Me</h3>
