@@ -16,7 +16,11 @@ function Navbar(props) {
           </NavLink>
         </li>
         <li>
-          <NavLink id="about" to="/about">
+          <NavLink
+            id="about"
+            to="/aboutMe"
+            onClick={() => handleClick("About")}
+          >
             About
           </NavLink>
         </li>
