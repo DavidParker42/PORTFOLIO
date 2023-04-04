@@ -9,7 +9,7 @@ import Work from "./pages/work";
 import { useState } from 'react';
 // import { Routes, Route } from 'react-router-dom';
 import { Routes, Route, Navigate } from "react-router-dom";
-import Navbar from './components/Navbar';
+
 
 
 
@@ -72,4 +72,4 @@ export default function PortfolioContainer() {
 //   );
 // }
 
-export default App;
+// export default App;
