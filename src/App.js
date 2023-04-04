@@ -1,13 +1,15 @@
 import './reset.css';
 import './App.css';
-import Header from './components/header';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Aboutme from './pages/aboutMe';
 import Contact from './pages/contact';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Work from "./pages/work";
 import { useState } from 'react';
 // import { Routes, Route } from 'react-router-dom';
 import { Routes, Route, Navigate } from "react-router-dom";
+import Navbar from './components/Navbar';
 
 
 
@@ -34,7 +36,7 @@ export default function PortfolioContainer() {
   return (
     <div>
       {/* we are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* here wer are calling the renderPage method which will return a component */}
       {renderPage()}
     </div>
