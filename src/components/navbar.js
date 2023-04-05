@@ -28,7 +28,7 @@ function Navbar(props) {
           <NavLink
             id="work"
             to="/work"
-            onClick={() => props.handlePageChange("Work")}
+            onClick={() => props.handlePageChange("work")}
           >
             Work
           </NavLink>
