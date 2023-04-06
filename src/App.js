@@ -1,6 +1,6 @@
 import './reset.css';
 import './App.css';
-import aboutMe from './pages/aboutMe';
+import AboutMe from './pages/AboutMe';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Contact from './pages/contact';
@@ -20,7 +20,7 @@ export default function PortfolioContainer() {
   const renderPage = () => {
     console.log("here1");
     if (currentPage === "about") {
-      console.log("aboutMe");
+      console.log("AboutMe");
       return <aboutMe />;
     }
     if (currentPage === "contact") {
