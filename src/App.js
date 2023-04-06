@@ -1,8 +1,8 @@
 import './reset.css';
 import './App.css';
+import aboutMe from './pages/aboutMe';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import aboutMe from './pages/aboutMe';
 import Contact from './pages/contact';
 import Footer from './components/Footer';
 import Work from "./pages/work";
