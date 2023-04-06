@@ -19,7 +19,7 @@ function Navbar(props) {
           <NavLink
             id="about"
             to="/aboutMe"
-            onClick={() => props.handlePageChange("About")}
+            onClick={() => props.handlePageChange("about")}
           >
             About
           </NavLink>
