@@ -2,7 +2,7 @@ import './reset.css';
 import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import AboutMe from './pages/aboutMe';
+import aboutMe from './pages/aboutMe';
 import Contact from './pages/contact';
 import Footer from './components/Footer';
 import Work from "./pages/work";
@@ -14,23 +14,31 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('AboutMe');
-
+  const [currentPage, setCurrentPage] = useState('about');
+  console.log("currently on " , currentPage)
   // checking to see what the value of 1currentPage` is. Depending on the value of currentPage, we return the corresponding component to render
   const renderPage = () => {
-    if (currentPage === 'aboutMe') {
-      return <AboutMe />;
+    console.log("here1");
+    if (currentPage === "about") {
+      console.log("aboutMe");
+      return <aboutMe />;
     }
-    if (currentPage === "Contact") {
+    if (currentPage === "contact") {
+      // console.log("contact");
       return <Contact />;
     }
-    if (currentPage === 'Work') {
+    if (currentPage === "work") {
+      // console.log("work");
       return <Work />;
     }
-    return <Contact />;
+    // return <aboutMe />;
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => {
+    setCurrentPage(page)
+    renderPage()
+  
+  };
 
   return (
     <div>
