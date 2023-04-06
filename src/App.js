@@ -2,7 +2,7 @@ import './reset.css';
 import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-import Aboutme from './pages/aboutMe';
+import AboutMe from './pages/aboutMe';
 import Contact from './pages/contact';
 import Footer from './components/Footer';
 import Work from "./pages/work";
