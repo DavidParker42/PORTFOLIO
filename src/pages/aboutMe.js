@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-function Aboutme(props) {
+function AboutMe(props) {
   return (
     <>
     <Navbar/>
@@ -26,4 +26,4 @@ function Aboutme(props) {
   );
 }
 
-export default Aboutme;
+export default AboutMe;
