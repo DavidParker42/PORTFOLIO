@@ -1,10 +1,10 @@
 import './reset.css';
 import './App.css';
 import AboutMe from './pages/AboutMe';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
+import Navbar from './components/navbar';
+import Header from './components/header';
 import Contact from './pages/contact';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import Work from "./pages/work";
 import { useState } from 'react';
 // import { Routes, Route } from 'react-router-dom';
