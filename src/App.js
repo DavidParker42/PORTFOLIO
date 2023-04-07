@@ -21,7 +21,7 @@ export default function PortfolioContainer() {
     console.log("here1");
     if (currentPage === "about") {
       console.log("AboutMe");
-      return <aboutMe />;
+      return <AboutMe />;
     }
     if (currentPage === "contact") {
       // console.log("contact");
