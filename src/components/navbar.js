@@ -34,6 +34,11 @@ function Navbar(props) {
           </NavLink>
         </li>
         <li>
+          <a href="./Resume.docx" download>
+            Resume
+          </a>
+        </li>
+        <li>
           <NavLink
             id="contact"
             to="/contact"
