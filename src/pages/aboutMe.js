@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 function AboutMe(props) {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     <div className="aboutMe">
       <section id="about-me">
         <aside>
